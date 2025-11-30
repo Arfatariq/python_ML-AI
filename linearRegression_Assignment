@@ -1,0 +1,33 @@
+import numpy as np
+
+x = np.array([100, 200, 300])
+y = np.array([2000, 4000, 6000])
+
+mean_x = np.mean(x)
+mean_y = np.mean(y)
+
+xy = x * y
+x_square = x * x
+
+mean_xy = np.mean(xy)
+mean_x_square = np.mean(x_square)
+
+numerator = mean_xy - (mean_x * mean_y)
+denominator = mean_x_square - (mean_x ** 2)
+m = numerator / denominator
+
+b = mean_y - (m * mean_x)
+
+print("x values =", x)
+print("y values =", y)
+print("mean_x =", mean_x)
+print("mean_y =", mean_y)
+print("mean(x*y) =", mean_xy)
+print("mean(x^2) =", mean_x_square)
+print("Slope (m) =", m)
+print("Intercept (b) =", b)
+print(f"Linear Regression Line: y = {m}*x + {b}")
+
+test = 4
+pred = m * test + b
+print(f"Prediction for x = {test}:", pred)
