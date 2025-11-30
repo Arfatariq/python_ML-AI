@@ -1,0 +1,29 @@
+#ASSIGNMENT NO 02
+#BASIC INPUT TASK
+
+name=input('enter your name :')
+age=int(input('enter your age'))
+print('Hello, My name is ' + name + 'and i am ' + str(age) + ' years old')
+#hobby-------------------------
+hobby=input('enter your favourite hobby:')
+print(hobby.upper())
+print(hobby.lower())
+print(len(hobby))
+
+#Medium level Tasks
+def greet_user(name):
+    print('hello '+ name +' phython is waiting for you' )
+    
+name= input('enter your name :')
+    
+greet_user(name)
+#sentence from user
+sen=input("enter a sentence :")
+print(sen.title())
+print(sen.strip())
+print(sen.replace(' ',""))
+concatenate
+verb=input("enter a verb :")
+adj=input("enter a adjective :")
+noun=input("enter a noun :")
+print('noun is: ' +noun + ', verb is: ' +verb+ ', adjective is: ')
